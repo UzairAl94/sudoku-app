@@ -1,0 +1,43 @@
+.cell {
+  padding: 0px;
+  margin: 0;
+  border-right: 1px solid lightgrey;
+
+  &.active {
+    background-color: rgba(25, 118, 210, 0.5);
+    input {
+      color: white;
+    }
+  }
+
+  &:nth-child(3n) {
+    border-right: 3px solid lightgrey;
+  }
+
+  &:last-child {
+    border-right: 0px solid lightgrey;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input {
+    background: transparent;
+    -moz-appearance: textfield;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    &:focus {
+      outline: none !important;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.control-container {
+  height: 100%;
+  .difficulty-status {
+    text-transform: uppercase;
+  }
+  .status-text {
+    color: gray;
+    font-size: 20px;
+    span {
+      font-weight: bold;
+    }
+  }
+  .action-row {
+    margin-top: 45px;
+  }
+}
